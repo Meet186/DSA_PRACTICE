@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ARRAY/ARRAY.iml" filepath="$PROJECT_DIR$/ARRAY/ARRAY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Arraylist.iml" filepath="$PROJECT_DIR$/Arraylist/Arraylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BinnarySearch/BinnarySearch.iml" filepath="$PROJECT_DIR$/BinnarySearch/BinnarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS/OOPS.iml" filepath="$PROJECT_DIR$/OOPS/OOPS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RECURSION/RECURSION.iml" filepath="$PROJECT_DIR$/RECURSION/RECURSION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RECURSIONWITHKUNAL/RECURSIONWITHKUNAL.iml" filepath="$PROJECT_DIR$/RECURSIONWITHKUNAL/RECURSIONWITHKUNAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SORTINGALGO/SORTINGALGO.iml" filepath="$PROJECT_DIR$/SORTINGALGO/SORTINGALGO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backTracking/backTracking.iml" filepath="$PROJECT_DIR$/backTracking/backTracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dsa/dsa.iml" filepath="$PROJECT_DIR$/dsa/dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstjavaprogram/firstjavaprogram.iml" filepath="$PROJECT_DIR$/firstjavaprogram/firstjavaprogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashmap/hashmap.iml" filepath="$PROJECT_DIR$/hashmap/hashmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lecture4/lecture4.iml" filepath="$PROJECT_DIR$/lecture4/lecture4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lecture_3/lecture_3.iml" filepath="$PROJECT_DIR$/lecture_3/lecture_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lecture_4/lecture_4.iml" filepath="$PROJECT_DIR$/lecture_4/lecture_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linklist/linklist.iml" filepath="$PROJECT_DIR$/linklist/linklist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pointer/pointer.iml" filepath="$PROJECT_DIR$/pointer/pointer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prifixSum/prifixSum.iml" filepath="$PROJECT_DIR$/prifixSum/prifixSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queue/self queue by Array/self queue by Array.iml" filepath="$PROJECT_DIR$/queue/self queue by Array/self queue by Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stackbypw/stackbypw.iml" filepath="$PROJECT_DIR$/stackbypw/stackbypw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twoDArray/twoDArray.iml" filepath="$PROJECT_DIR$/twoDArray/twoDArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
