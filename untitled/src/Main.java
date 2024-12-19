@@ -1,33 +1,24 @@
 import java.util.*;
-
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    static void print(int n ){
-        if(n == 0) return;
-        System.out.println(n);
-        print(n-1);
-        System.out.println(n);
+    static List<List<Integer>> subset(int nums[]){
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.add(new ArrayList<>());
+        for(var num : nums){
+            int n = ans.size();
+            for (int i = 0; i < n; i++) {
+                List<Integer> temp = new ArrayList<>(ans.get(i));
+                temp.add(num);
+                ans.add(temp);
+
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
-//    List<String> crickters = Arrays.asList("Virat-Kholi","Rohit-Sharma","Steve-Smith",
-//            "Hardick-Pandya","Glen-Maxwell","De-coke","Lathem","Nanu"
-//    );
-////    crickters.forEach(System.out::println);
-//    Collections.sort(crickters,((o1, o2) ->
-//            o1.length() - o2.length()
-//            ));
-//        Collections.shuffle(crickters);
-////        crickters.forEach(System.out::println);
-//        Collections.swap(crickters,0,5);
-//        crickters.forEach(System.out::println);
 
-        print(4);
-
-
+ 
 
 
 

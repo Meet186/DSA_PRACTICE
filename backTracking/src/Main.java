@@ -23,55 +23,62 @@ public class Main {
 
     }
 
+    static List<List<Integer>> subset(int nums[]){
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.add(new ArrayList<>());
 
-    static List<List<Integer>> subset(int nums []){
-        List<List<Integer>> result = new ArrayList<>();
-        result.add(new ArrayList<>());
-
-        for(int num: nums){
-            int n = result.size();
-            for(int i=0; i < n; i++){
-                List<Integer> temp = new ArrayList<>(result.get(i));
+        for(int num : nums){
+            int n = ans.size();
+            for (int i = 0; i < n; i++) {
+                List<Integer> temp = new ArrayList<>(ans.get(i));
                 temp.add(num);
-                result.add(temp);
+                ans.add(temp);
+
             }
-        }
-        return result;
-    }
-
-    static ArrayList<String> subset(String s,String currans){
-        if(s.length() == 0){
-            ArrayList<String> ans = new ArrayList<>();
-            ans.add(currans);
-            return ans;
-        }
-        char ch = s.charAt(0);
-        ArrayList<String> left = subset(s.substring(1),currans);
-        ArrayList<String> right = subset(s.substring(1),ch+currans);
-
-        left.addAll(right);
-        return left;
-    }
-
-    static ArrayList<String> subset2(String s){
-        ArrayList<String> ans = new ArrayList<>();
-        if(s.length() == 0){
-            ans.add("");
-            return ans;
-        }
-        char ch = s.charAt(0);
-        ArrayList<String> smallans = subset2(s.substring(1));
-        for(  var ss  : smallans){
-            ans.add(ss);
-            ans.add(ch+ss);
-
         }
         return ans;
     }
 
+    static List<List<Integer>> permutation(int nums []){
+        List<List<Integer>> ans = new ArrayList<>();
+        help(nums,0,ans);
+        return ans;
+    }
+
+    private static void help(int[] nums, int index, List<List<Integer>> ans) {
+        if(index == nums.length-1){
+            List<Integer> ll = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++) {
+                ll.add(nums[i]);
+
+
+            }
+            ans.add(ll);
+            return;
+        }
+        for (int i = index; i < nums.length ; i++) {
+            swap(nums,i,index);
+            help(nums,index + 1,ans);
+            swap(nums,i,index);
+
+        }
+
+
+    }
+
+    private static void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
 
 
     public static void main(String[] args) {
+        int n [] = {1,2,3,4
+
+        };
+        List<List<Integer>> ans = permutation(n);
+        System.out.println(ans);
 
 
     }

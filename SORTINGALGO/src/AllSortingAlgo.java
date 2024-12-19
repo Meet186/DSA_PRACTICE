@@ -17,9 +17,7 @@ AllSortingAlgo {
     static void bubleSort(int arr []){
         // TC - O(N*N)
         // SC - O(1)
-
         int n = arr.length;
-
         for (int i = 0; i < n; i++) {
             boolean flag = false;
             for (int j = 0; j < n-i-1; j++) {
@@ -60,7 +58,6 @@ AllSortingAlgo {
         // TC - O(N*N)
         // SC - O(1)
         int n = arr.length;
-
         for (int i = 1; i <n ; i++) {
             int j = i;
             while (j > 0 && arr[j] < arr[j-1]){
