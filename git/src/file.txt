@@ -1,4 +1,4 @@
 cerculate tasks
 nav bar created
 new task added -> make footer
-new task added -> make animation of the footer
+task complete -> footer.
