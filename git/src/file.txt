@@ -1,2 +1,3 @@
 cerculate tasks
 nav bar created
+new task added -> make footer
