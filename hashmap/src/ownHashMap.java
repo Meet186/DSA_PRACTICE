@@ -44,9 +44,7 @@ public class ownHashMap <k,v>{
             }
         }
         return -1;
-
     }
-
     public void put(k key,v value){
         int bi = hasFun(key);
         LinkedList<Node> currBucket = bucket[bi];
@@ -60,13 +58,11 @@ public class ownHashMap <k,v>{
             currBucket.add(newNode);
             size++;
         }
-
         if(size >= bucket.length * LOAD_FACTOR){
             // Threshold value = initial_Capacity * loadFactor..
             rehash(bucket.length * 2);
         }
     }
-
     private void rehash(int N){
         List<Node> [] oldBucket = bucket;
         initBucket(N);

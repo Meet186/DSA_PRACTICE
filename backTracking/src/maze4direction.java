@@ -25,8 +25,6 @@ public class maze4direction {
 
         // Back-Tracking
         isvisited[sr][sc] = false;
-
-
     }
 
 

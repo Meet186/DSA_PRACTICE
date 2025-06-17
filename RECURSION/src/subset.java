@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-
 public class subset {
-
     static void removeA(String s, String c){
         if(s.isEmpty()){
             System.out.println(c);
@@ -14,8 +12,6 @@ public class subset {
             removeA(s.substring(1),ch+c);
         }
     }
-
-
     static ArrayList<String> getssq(String s){
         ArrayList<String> ans = new ArrayList<>();
         if(s.length() == 0){
@@ -30,7 +26,6 @@ public class subset {
         }
         return ans;
     }
-
     static void subSet2(String s,String currAns){
         if(s.length() == 0){
             System.out.println(currAns);
@@ -41,7 +36,6 @@ public class subset {
         subSet2(remString,currchar+currAns);
         subSet2(remString,currAns);
     }
-
     static ArrayList<String> subsetArray(String s,String currAns){
         if(s.length() == 0){
              ArrayList<String> list = new ArrayList<>();
@@ -50,7 +44,7 @@ public class subset {
         }
         char currchar = s.charAt(0);
         String remString = s.substring(1);
-      ArrayList<String> left =  subsetArray(remString,currchar+currAns);
+        ArrayList<String> left =  subsetArray(remString,currchar+currAns);
         ArrayList<String> rigth = subsetArray(remString,currAns);
 
         left.addAll(rigth);

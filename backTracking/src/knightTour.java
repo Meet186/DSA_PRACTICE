@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 public class knightTour {
     static boolean isSafe(char[][] board,int row,int col){
         int len = board.length;
@@ -45,7 +44,6 @@ public class knightTour {
         return true;
     }
     static void nKnight(int row){
-
         char board [][] = new char[row][row];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < row; j++) {
@@ -55,7 +53,6 @@ public class knightTour {
         helper(board,0,0,0);
         return ;
     }
-
     static void helper(char board [][],int row,int col,int num){
         int n = board.length;
         if(row == n){
@@ -73,6 +70,7 @@ public class knightTour {
             else  helper(board,row+1,0,num+1);
             board[row][col] = 'X'; // BACKTRACKING
         }
+        
         if(col != n-1) helper(board,row,col+1,num+1);
         else  helper(board,row+1,0,num+1);
 

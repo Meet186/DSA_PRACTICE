@@ -23,17 +23,12 @@ public class multiplicationOfMatrix {
 
         for (int i = 0; i < r1; i++) {
             for (int j = 0; j < c2; j++) {
-
                 for (int k = 0; k < r2; k++) {
                     mul[i][j] += a[i][k] * b[k][j];
-
                 }
-
             }
 
         }
-
-
         printMatrix(mul);
     }
 

@@ -1,6 +1,9 @@
-cerculate tasks
+circulate tasks
 nav bar created
 new task added -> make footer
 task complete -> footer.
-all set
-all done
+all set // merge by main {branch}
+all done // merge by feature/navbar {branch}
+{
+ // use stash to reflect changes without save .
+}
