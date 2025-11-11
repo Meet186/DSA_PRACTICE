@@ -352,7 +352,6 @@ public class question {
                     } else {
                         op.push(ch);
                     }
-
                 }
             }
         }
@@ -363,17 +362,12 @@ public class question {
             String newVal = o + val2 + val1;
             val.push(newVal);
         }
-
         return val.peek();
-
     }
-
     // postFix
-
     static String postFix(String str){
         Stack<String> val = new Stack<>();
         Stack<Character> op = new Stack<>();
-
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             int ascai = (int) ch;
@@ -382,8 +376,7 @@ public class question {
             } else if (op.size() == 0 || ch == '(' || op.peek() == '(') {
                 op.push(ch);
             } else if(ch == ')'){
-                while (op.peek() != '('){
-                    /// work
+                while (op.peek() != '('){    /// work
                     String val2 = val.pop();
                     String val1 = val.pop();
                     char o = op.pop();
@@ -448,9 +441,7 @@ public class question {
         }
         return st.peek();
     }
-
     // prefix to postfix
-
     static String prefixToPostFix(String str){
         Stack<String> st = new Stack<>();
         for (int i = str.length()-1; i >=0 ; i--) {
@@ -465,11 +456,9 @@ public class question {
                 String newString = val1 + val2 + ch;
                 st.push(newString);
             }
-
         }
         return st.peek();
     }
-
     // postFix to prefix
     static  String postFixToPrefix(String str){
         Stack<String> st = new Stack<>();
@@ -485,14 +474,10 @@ public class question {
                 String newString =  ch + val1 + val2 ;
                 st.push(newString);
             }
-
         }
         return st.peek();
-
     }
-
     // postfix to infix
-
     static int postFixToInfix(String str){
         Stack<Integer> st = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
@@ -511,12 +496,9 @@ public class question {
                 if(ch == '*') st.push(val1 * val2);
                 if(ch == '/') st.push(val1 / val2);
             }
-
         }
         return st.peek();
     }
-
-
    static int isCelibraty(int matrix [][],int n){
         // brute force approach..
        for (int i = 0; i < n; i++) {
@@ -526,18 +508,13 @@ public class question {
                    // that's mean i never be a celibraty because i know j && j did not know i .
                    celebraty = false;
                }
-
-
            }
            if(celebraty){
                return i;
            }
-
        }
        return -1;
-
    }
-
    static int isCleibraty2(int matrix [][],int n ){
         Stack<Integer> st = new Stack<>();
        for (int i = 0; i < n; i++) {
@@ -585,7 +562,6 @@ public class question {
        }
        return ans;
    }
-
    static int [] previousSamll(int arr[]){
         Stack<Integer> st = new Stack<>();
         st.push(0);
@@ -616,24 +592,17 @@ public class question {
        int i=0;
        int j =0;
        int max = 0;
-
        while (i < n && j < n){
-
            if(arr[i] <= aux[j]){
-               if(j-i > max ){
-                   max = j-i;
-               }
+               if(j-i > max ){ max = j-i;}
                j++;
            } else {
                i++;
                j = i;
            }
        }
-
        return max;
    }
-
-
     static int strstr(String s1, String s2){
         int m = s1.length();
         int n = s2.length();

@@ -17,15 +17,8 @@ public class middleOFlinklist {
     public static void main(String[] args) {
         Node a  = new Node(4);
         Node b  = new Node(44);
-
-
         a.next = b;
         b.next = a;
-
-
-
-
-
         int ans = cyclePoinyt(a);
         System.out.println(ans);
 

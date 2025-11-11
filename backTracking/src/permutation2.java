@@ -64,7 +64,7 @@ public class permutation2 {
     }
 
     public static void main(String[] args) {
-        int nusm [] = {1,2,314,5,12};
+        int nusm [] = {1,2,3,4,5,6,7,8};
         List<List<Integer>> ans = permutation2(nusm);
         System.out.println(ans);
     }

@@ -4,7 +4,6 @@ public class maze4direction {
         helper(0,0,row-1,col-1,"",isVisited);
     }
     static void helper(int sr,int sc,int er,int ec,String s , boolean isvisited [][]){
-
         if(sr < 0 || sc < 0) return;
         if(sr > er || sc > ec) return;
         if(isvisited[sr][sc] == true) return;
@@ -26,8 +25,6 @@ public class maze4direction {
         // Back-Tracking
         isvisited[sr][sc] = false;
     }
-
-
 
 
 

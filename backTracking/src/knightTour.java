@@ -51,7 +51,6 @@ public class knightTour {
             }
         }
         helper(board,0,0,0);
-        return ;
     }
     static void helper(char board [][],int row,int col,int num){
         int n = board.length;
@@ -64,7 +63,7 @@ public class knightTour {
                 System.out.println();
             }
             return;
-        } else if (isSafe(board,row,col)) {
+        }  if (isSafe(board,row,col)) {
             board[row][col] = 'K';
             if(col != n-1) helper(board,row,col+1,num+1);
             else  helper(board,row+1,0,num+1);

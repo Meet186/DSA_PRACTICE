@@ -1,9 +1,14 @@
 package LLSTACK;
-
+class Node{
+    int val;
+    Node next;
+    Node(int val){
+        this.val = val;
+    }
+}
 public  class stack {
     Node head = null;
     private int size;
-
     public void push(int val){
         Node temp = new Node(val);
         temp.next = head;
@@ -13,12 +18,10 @@ public  class stack {
     public int peack(){
         return head.val;
     }
-
     public int pop(){
         size--;
         int top = head.val;
         head = head.next;
-
         return top;
     }
     public int size(){
@@ -32,15 +35,5 @@ public  class stack {
         }
         System.out.println();
     }
-
-
-
-
 }
-class Node{
-    int val;
-    Node next;
-    Node(int val){
-        this.val = val;
-    }
-}
+

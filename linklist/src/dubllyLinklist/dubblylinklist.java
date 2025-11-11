@@ -22,9 +22,7 @@ public class dubblylinklist {
         int minDistance = Integer.MAX_VALUE;
         int firstCriticalPoint = 0;
         int previousCriticalPoint = 0;
-
         int i = 1;
-
         while (i < arr.length - 1){
             if((arr[i] < arr[i-1] && arr[i] < arr[i+1]) ||
                (arr[i] > arr[i-1] && arr[i] > arr[i+1])
@@ -43,9 +41,7 @@ public class dubblylinklist {
             return new int[] {-1,-1};
         }
         return new int[] {minDistance,previousCriticalPoint-firstCriticalPoint};
-
     }
-
     public static void main(String[] args) {
         int arr [] = {2,3,2,1,5,4,6};
         int ans [] = maxmincriticalpoint(arr);

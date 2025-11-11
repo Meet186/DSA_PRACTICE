@@ -18,13 +18,8 @@ public class permutation {
             small = permutation(rem,t+ch);
             ans.addAll(small);
         }
-
-
         return ans;
-
     }
-
-
     static List<List<Integer>> permutation01(int nums[]){
         List<List<Integer>> ans = new ArrayList<>();
         boolean isvalid[] = new boolean[nums.length];
@@ -32,7 +27,6 @@ public class permutation {
         helper(nums,ds,isvalid,ans);
         return ans;
     }
-
     private static void helper(int[] nums, List<Integer> ds, boolean[] isvalid, List<List<Integer>> ans) {
         if(ds.size() == nums.length){
             List<Integer> list = new ArrayList<>();

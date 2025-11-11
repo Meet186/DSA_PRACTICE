@@ -1,42 +1,31 @@
 import java.util.LinkedList;
 import java.util.List;
-
 public class ownHashMap <k,v>{
     private final int INITIAL_CAPACITY = 16;
     private final float LOAD_FACTOR = 0.75f;
     public int size;
-
     ownHashMap(){
         initBucket(INITIAL_CAPACITY);
     }
-
     private LinkedList<Node> [] bucket;
-
     private void initBucket(int N){
         bucket = new LinkedList[N];
         for (int i = 0; i < bucket.length; i++) {
             bucket[i] = new LinkedList<>();
         }
     }
-
     private int hasFun(k key){
         int hascode = key.hashCode();
         return Math.abs(hascode) % bucket.length;
     }
-
-
     private class Node{
         k key;
         v value;
-
         Node(k key, v value){
             this.key = key;
             this.value = value;
         }
-
     }
-
-
     private int searchInBucket(LinkedList<Node> ll , k key){
         for (int i = 0; i < ll.size(); i++) {
             if(ll.get(i) == key){
